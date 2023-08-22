@@ -1,6 +1,6 @@
 const body = document.querySelector('body');
 body.addEventListener('click', function(){
-
+document.querySelector('h1').innerText="Loading...";
     fetch('https://v2.jokeapi.dev/joke/Programming?type=single')
      .then( res => {
         console.log(res)
